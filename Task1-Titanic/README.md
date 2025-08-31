@@ -204,3 +204,10 @@ jupyter (for notebook version)
 
 ⚠️ Note on Warnings
 The code includes some pandas future warnings related to chained assignment and in-place operations. These are cosmetic warnings that don't affect functionality and will be addressed in future pandas versions. The models perform optimally despite these warnings.
+
+👨‍💻 Author
+Name: Dinesh Reddy
+
+Registration Number: 114
+
+Repository: BT-AI-ML-SEP-2025-114

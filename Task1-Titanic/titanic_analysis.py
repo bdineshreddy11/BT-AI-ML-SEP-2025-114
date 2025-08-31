@@ -121,9 +121,9 @@ scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_val_scaled = scaler.transform(X_val)
 
-# =============================================================================
+# --------------------------------------------------------------------------------
 # HYPERPARAMETER TUNING FOR DECISION TREE (NEW)
-# =============================================================================
+# ---------------------------------------------------------------------------------
 print("\n" + "="*50)
 print("HYPERPARAMETER TUNING")
 print("="*50)
@@ -146,9 +146,9 @@ print("Best cross-validation accuracy: {:.4f}".format(grid_search.best_score_))
 # Get the best model
 best_dtree = grid_search.best_estimator_
 
-# =============================================================================
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # MODEL TRAINING AND EVALUATION
-# =============================================================================
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 print("\n" + "="*50)
 print("MODEL PERFORMANCE")
 print("="*50)
@@ -172,9 +172,9 @@ print("Optimized Decision Tree Accuracy: {:.4f}".format(accuracy_score(y_val, y_
 print("Decision Tree Classification Report:")
 print(classification_report(y_val, y_pred_dtree))
 
-# =============================================================================
+# *****************************************************************************
 # CROSS-VALIDATION (NEW)
-# =============================================================================
+# *****************************************************************************
 print("\n" + "="*50)
 print("CROSS-VALIDATION RESULTS")
 print("="*50)
@@ -218,9 +218,10 @@ plt.legend(loc="lower right")
 plt.savefig('E:/BT-AI-ML-SEP-2025-114/Task1-Titanic/roc_curve.png')
 plt.show()
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # FEATURE IMPORTANCE AND CONFUSION MATRIX
-# =============================================================================
+# -----------------------------------------------------------------------------
+
 # Feature Importance for Decision Tree
 feature_importance = pd.DataFrame({
     'feature': X.columns,
@@ -249,9 +250,9 @@ plt.show()
 joblib.dump(best_dtree, 'best_decision_tree_model.pkl')
 print("\nBest model saved as 'best_decision_tree_model.pkl'")
 
-# =============================================================================
+# *******************************************************************************
 # FINAL SUMMARY
-# =============================================================================
+# *******************************************************************************
 print("\n" + "="*50)
 print("FINAL SUMMARY")
 print("="*50)
