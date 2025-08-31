@@ -67,16 +67,17 @@ Data Transformation:
 ✅ Cross-validation with 5 folds
 
 📊 Exploratory Data Analysis
-https://titanic_eda.png
+![EDA Visualization](https://github.com/bdineshreddy11/BT-AI-ML-SEP-2025-114/raw/main/Task1-Titanic/titanic_eda.png)
+
 Figure 1: Survival analysis by gender, passenger class, age, and fare distribution
 
 📈 Model Performance
 Confusion Matrices
-https://confusion_matrix.png
+![Confusion Matrix](https://github.com/bdineshreddy11/BT-AI-ML-SEP-2025-114/raw/main/Task1-Titanic/confusion_matrix.png)
 Figure 2: Confusion matrices for Logistic Regression (left) and Decision Tree (right)
 
 ROC Curve Analysis
-https://roc_curve.png
+![ROC Curve](https://github.com/bdineshreddy11/BT-AI-ML-SEP-2025-114/raw/main/Task1-Titanic/roc_curve.png)
 Figure 3: ROC curves showing model performance across different thresholds
 
 📋 Model Performance Results
@@ -117,6 +118,7 @@ Best Cross-Validation Accuracy: 81.74%
 
 📊 Cross-Validation Performance
 Model	Mean Accuracy	Standard Deviation
+
 Logistic Regression	82.02%	± 3.82%
 Decision Tree	81.74%	± 5.16%
 🔝 Top 10 Feature Importance
