@@ -1,0 +1,334 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #f0f9ff 0%, #cbebff 100%);
+    color: #1a202c;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#root {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-header {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.site-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: #2c5282;
+}
+
+.site-nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-button {
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4a5568;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border-radius: 6px;
+}
+
+.nav-button:hover {
+    background-color: #f7f9fc;
+    color: #2c5282;
+}
+
+.nav-button.active {
+    background-color: #2c5282;
+    color: white;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.app-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    max-width: 700px;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #f7f9fc;
+    border-top: 1px solid #e2e8f0;
+    font-size: 0.875rem;
+    color: #718096;
+}
+
+.home-container {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.hero-section {
+    padding: 4rem 2rem;
+}
+
+.hero-headline {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #2c5282;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: #4a5568;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+.call-to-action-button {
+    background-color: #2c5282;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.call-to-action-button:hover {
+    background-color: #357bd8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.value-section {
+    padding: 3rem 2rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    margin-top: 2rem;
+}
+
+.value-headline {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #2c5282;
+}
+
+.value-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.value-card {
+    background-color: #f7f9fc;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+    text-align: left;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.value-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #2c5282;
+}
+
+.value-description {
+    font-size: 0.9rem;
+    color: #4a5568;
+    line-height: 1.4;
+}
+
+/* Prediction Page Specific Styles */
+.prediction-page-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    max-width: 700px;
+    width: 100%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.prediction-page-container h1 {
+    color: #2c5282;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.prediction-page-container p {
+    color: #4a5568;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: #2c5282;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+}
+
+.submit-button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.submit-button:hover {
+    background-color: #357bd8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button.is-loading {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.result-box {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #d1e7dd;
+    border: 1px solid #c3e6cb;
+    border-radius: 6px;
+    color: #155724;
+    text-align: center;
+}
+
+/* Reports Page Styles */
+.reports-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    max-width: 900px;
+    width: 100%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.report-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.report-navigation button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.report-navigation button:hover {
+    background-color: #357bd8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.report-navigation button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.chart-item {
+    padding: 1rem;
+}
+
+.chart-item h2 {
+    font-size: 1.5rem;
+    color: #2c5282;
+    margin-bottom: 1rem;
+}
+
+.chart-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.chart-description {
+    font-size: 1rem;
+    color: #4a5568;
+    margin-top: 1rem;
+}
+
+.page-indicator {
+    font-size: 1rem;
+    color: #718096;
+    margin-bottom: 1rem;
+}
