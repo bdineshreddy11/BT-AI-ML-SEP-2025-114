@@ -120,30 +120,31 @@ Once both the backend and frontend servers are running, the application will be 
 
 ## 8 📸 Screenshots  
 
-### 🏠 Homepage  
-![HomePage Screenshot](./images/HomePage.png)
+### 🏠 Homepage
+![HomePage Screenshot](./frontend/public/images/HomePage.png)
 
-### ℹ️ About Us Page  
-![AboutUs Screenshot](./images/aboutus.png)
+### ℹ️ About Us Page
+![AboutUs Screenshot](./frontend/public/images/aboutus.png)
 
-### 📝 Prediction Page  
-![Prediction Page Screenshot](./images/prediction.png)
+### 📝 Prediction Page
+![Prediction Page Screenshot](./frontend/public/images/prediction.png)
 
-### 📊 Visualizations  
-**Report 1**  
-![Visualizations Screenshot1](./images/report1.png)
+### 📊 Visualizations
 
-**Report 2**  
-![Visualizations Screenshot2](./images/report2.png)
+**Report 1**
+![Visualizations Screenshot1](./frontend/public/images/report1.png)
 
-**Report 3**  
-![Visualizations Screenshot3](./images/report3.png)
+**Report 2**
+![Visualizations Screenshot2](./frontend/public/images/report2.png)
 
-**Report 4**  
-![Visualizations Screenshot4](./images/report4.png)
+**Report 3**
+![Visualizations Screenshot3](./frontend/public/images/report3.png)
 
-**Report 5**  
-![Visualizations Screenshot5](./images/report5.png)
+**Report 4**
+![Visualizations Screenshot4](./frontend/public/images/report4.png)
+
+**Report 5**
+![Visualizations Screenshot5](./frontend/public/images/report5.png)
 
  
 #
@@ -364,11 +365,9 @@ Check the existing Issues for solutions
 
 Create a new issue with your question or problem
 
-Contact: [Your Email]
+Contact: bdineshreddy1123@gmail.com
 
-Documentation: [Link to detailed docs if available]
 
 ### 14  📄 License
 
-This project is licensed under the MIT License — see the LICENSE file for details.
-Feel free to use, modify, and distribute as needed.
+This project is created for educational purposes as part of the Badkul Technology AI/ML assignment.
